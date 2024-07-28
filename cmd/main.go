@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"github.com/DominikKoniarz/go-web-files-encryptor/internal/server"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	r := server.New()
+
+	r.RegisterRoutes()
+
+	r.Run("localhost:8080")
+
 }
