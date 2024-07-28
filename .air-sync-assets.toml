@@ -1,0 +1,8 @@
+[build]
+  cmd = "templ generate --notify-proxy"
+  bin = "true"
+  delay = 100
+  exclude_dir = ["node_modules"]
+  include_dir = ["assets"]
+  include_ext = ["js", "css"]
+  stop_on_error = false
