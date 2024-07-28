@@ -5,5 +5,8 @@
 	"main": "cmd/main.go",
 	"scripts": {},
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.4.7"
+	}
 }
