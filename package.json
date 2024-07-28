@@ -3,7 +3,14 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "cmd/main.go",
-	"scripts": {},
+	"scripts": {
+		"dev:templ": "templ generate --watch --proxy=\"http://localhost:8080\" --open-browser=false -v",
+		"dev:server": "air -c .air-server.toml",
+		"dev:tailwind": "tailwindcss -i ./src/css/global.css -o ./assets/css/styles.css --minify --watch",
+		"dev:esbuild": "esbuild src/js/index.ts --bundle --minify --sourcemap --outdir=assets/js/ --watch",
+		"dev:sync-assets": "air -c .air-sync-assets.toml",
+		"dev": "npm-run-all -p dev:templ dev:server dev:tailwind dev:esbuild dev:sync-assets"
+	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
