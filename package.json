@@ -1,0 +1,9 @@
+{
+	"name": "go-web-files-encryptor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "cmd/main.go",
+	"scripts": {},
+	"author": "",
+	"license": "ISC"
+}
